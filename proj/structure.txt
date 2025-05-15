@@ -1,0 +1,9 @@
+//Features
+-students (name,grade) - story in array- multi
+-Display (name/(passed or failed))
+
+//pages
+-login(user,password) -admin ,12345
+-view student info(light / dark)
+-logout
+

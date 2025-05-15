@@ -59,4 +59,26 @@ echo "hello $name";
  // control flow
  // loops
  // functions
+
+
+
+    // swap two variable using a temporary third 
+    $a = 10;
+    $b = 20;
+    $temp = $a; // tem = 10
+    $a = $b;
+    $b = $temp;
+    echo "<br>";
+    echo $a;
+    echo $b;
+
+    // check data type using var-dump
+    var_dump ($name); // value and type
+    var_dump ($age);
+    var_dump ($height);
+    var_dump ($is_married);
+    var_dump ($hobbies);
+
+
+
 ?>
