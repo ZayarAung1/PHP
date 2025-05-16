@@ -5,6 +5,11 @@ if (!isset($_SESSION['login'])) {
     exit();
 }
 
+// theme setup
+$theme = isset($_COOKIE['theme']) ? $_COOKIE['theme'] : 'light';
+$bg = $theme == 'light' ? '#fff' : '#222';
+$color = $theme == 'light' ? '#222' : '#fff';
+
 ?>
 
 <!DOCTYPE html>
@@ -14,10 +19,16 @@ if (!isset($_SESSION['login'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard Page</title>
 </head>
-<body>
-    <h1>Walcome to Dashboard Page</h1>
-    
+<body style="background-color: <?php echo $bg ?>; color: <?php echo $color ?>;">
 
+
+    <h1>Walcome to Dashboard </h1><?php echo $_SESSION['username'] ?>
+    <a href="logout.php">Logout</a>
+    <a href="set_theme.php">Set Theme</a>
+    
+<!-- logout -->
+
+<!-- Theme Switch   -->
 
 <?php
  $students = [
